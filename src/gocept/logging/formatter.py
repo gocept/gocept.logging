@@ -1,4 +1,5 @@
 import logging
+import re
 
 
 # see logging.Logger.makeRecord()
@@ -18,8 +19,16 @@ class KeyValueFormatter(logging.Formatter):
         for key, value in record.__dict__.items():
             if key in PREDEFINED_KEYS:
                 continue
-            result.append('%s=%r' % (key, value))
+            result.append('%s=%s' % (key, self.quote(value)))
         return ' '.join(result)
+
+    SIMPLE_WORD = re.compile(r'^[a-zA-Z0-9_.+-]+$')
+
+    def quote(self, value):
+        value = str(value)
+        if self.SIMPLE_WORD.match(value):
+            return value
+        return repr(value)
 
 
 class SyslogKeyValueFormatter(KeyValueFormatter):
