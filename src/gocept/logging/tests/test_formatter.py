@@ -25,7 +25,7 @@ class KeyValueFormatter(unittest.TestCase):
 
     def test_appends_key_value_pairs_after_message(self):
         self.log.warning('Hello, world!', extra={'foo': 'bar'})
-        self.assertEqual("test: Hello, world! foo=bar\n", self.output)
+        self.assertIn("test: Hello, world! foo=bar\n", self.output)
 
     def test_empty_value_is_quoted(self):
         self.log.warning('', extra={'foo': ''})
