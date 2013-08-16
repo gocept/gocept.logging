@@ -1,7 +1,7 @@
 import logging
 
 
-class LoggerAdapter(logging.LoggerAdapter):
+class StaticDefaults(logging.LoggerAdapter):
 
     def process(self, msg, kwargs):
         if 'extra' in kwargs:
