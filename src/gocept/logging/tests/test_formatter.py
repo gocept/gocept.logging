@@ -1,4 +1,3 @@
-from gocept.logging.testing import LogMessage
 from StringIO import StringIO
 import gocept.logging
 import logging
@@ -21,13 +20,3 @@ class KeyValueFormatter(unittest.TestCase):
 
         self.log.warning('Hello, world!', extra={'foo': 'bar'})
         self.assertEqual("test: Hello, world! foo='bar'\n", output.getvalue())
-
-    def test_inspect_extra_values(self):
-        handler = gocept.logging.TestingHandler()
-        self.log.setLevel(logging.DEBUG)
-        self.log.addHandler(handler)
-
-        self.log.warning('Hello, world!', extra={'foo': 'bar'})
-        self.assertEqual(
-            [LogMessage('test', 'WARNING', 'Hello, world!', {'foo': 'bar'})],
-            handler.messages)
