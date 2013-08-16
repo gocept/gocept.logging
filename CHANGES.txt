@@ -5,10 +5,12 @@ Change log for gocept.logging
 0.2 (unreleased)
 ================
 
-- Nothing changed yet.
+- Add timestamp and hostname to syslog messages,
+  this allows plugging SyslogKeyValueFormatter directly into logstash
+  without an intermediary syslogd.
 
 
 0.1 (2013-08-16)
 ================
 
-initial release
+- initial release
