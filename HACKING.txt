@@ -1,0 +1,21 @@
+=========================
+Developing gocept.logging
+=========================
+
+:Author:
+    `gocept <http://gocept.com/>`_ <mail@gocept.com>
+
+:Online documentation:
+    http://pythonhosted.org/gocept.logging/
+
+:PyPI page:
+    http://pypi.python.org/pypi/gocept.logging/
+
+:Issues:
+    `report by e-mail <mail@gocept.com>`_
+
+:Source code:
+    https://bitbucket.org/gocept/gocept.logging/
+
+:Current change log:
+    https://bitbucket.org/gocept/gocept.logging/raw-file/tip/CHANGES.txt

@@ -1,0 +1,8 @@
+=============================
+Change log for gocept.logging
+=============================
+
+0.1 (unreleased)
+================
+
+initial release
