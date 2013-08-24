@@ -5,9 +5,6 @@ Developing gocept.logging
 :Author:
     `gocept <http://gocept.com/>`_ <mail@gocept.com>
 
-:Online documentation:
-    http://pythonhosted.org/gocept.logging/
-
 :PyPI page:
     http://pypi.python.org/pypi/gocept.logging/
 
