@@ -2,7 +2,7 @@
 Change log for gocept.logging
 =============================
 
-0.2 (unreleased)
+0.2 (2013-08-24)
 ================
 
 - Add timestamp and hostname to syslog messages,
