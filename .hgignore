@@ -1,15 +1,8 @@
 syntax: glob
 
-.installed.cfg
-.mr.developer.cfg
-bin
+.coverage
+.tox
 build
-develop-eggs
+coverage-report
 dist
-doc/_api
-eggs
-include
-lib
-local
-local.cfg
-parts
+testreport.xml
