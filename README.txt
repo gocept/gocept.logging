@@ -211,5 +211,7 @@ Known bugs
 
 If you log messages as unicode, e.g. ``log.info(u'foo')``, the SyslogHandler
 will (incorrectly) prepend a byte-order mark, which confuses the logstash
-parser, resulting in "_grokparsefailure". This is a known bug in the Python
-standard library: http://bugs.python.org/issue14452.
+parser, resulting in "_grokparsefailure". This is a `known bug`_ in the Python
+standard library that has been fixed in Python-2.7.4.
+
+.. _`known bug`: http://bugs.python.org/issue14452
