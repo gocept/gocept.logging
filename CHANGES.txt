@@ -2,7 +2,7 @@
 Change log for gocept.logging
 =============================
 
-0.3 (unreleased)
+0.3 (2013-09-04)
 ================
 
 - Added sepcialized ``argparse.ArgumentParser`` which enables user to set the
