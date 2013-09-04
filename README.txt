@@ -206,6 +206,24 @@ logstash configuration
     }
 
 
+Additional features
+===================
+
+ArgumentParser
+--------------
+
+The provided ``gocept.logging.ArgumentParser`` provides you with the ability to
+set a ``logging`` level in you runscripts.::
+
+    from gocept.logging import ArgumentParser
+    parser = ArgumentParser()
+    # add your arguments with parser.add_argument() here
+    options = parser.parse_args()
+
+Use ``your_run_script --help`` to see a help message about the arguments you
+can pass to set logging level.
+
+
 Known bugs
 ==========
 
