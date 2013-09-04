@@ -5,7 +5,8 @@ Change log for gocept.logging
 0.3 (unreleased)
 ================
 
-- Nothing changed yet.
+- Added sepcialized ``argparse.ArgumentParser`` which enables user to set the
+  ``logging`` level by default..
 
 
 0.2 (2013-08-24)
