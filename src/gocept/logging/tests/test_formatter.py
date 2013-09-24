@@ -47,6 +47,10 @@ class KeyValueFormatter(unittest.TestCase):
         self.log.warning('', extra={'foo': "bar'baz"})
         self.assertIn('foo="bar\'baz"', self.output)
 
-    def test_objects_are_serialized_to_string(self):
+    def test_objects_in_extra_are_serialized_to_string(self):
         self.log.warning('', extra={'foo': object()})
         self.assertRegexpMatches(self.output, "foo='<object object at 0x.*>'")
+
+    def test_objects_in_message_are_serialized_to_string(self):
+        self.log.warning(object())
+        self.assertRegexpMatches(self.output, "<object object at 0x.*>")
