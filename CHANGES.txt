@@ -5,7 +5,7 @@ Change log for gocept.logging
 0.4 (unreleased)
 ================
 
-- Nothing changed yet.
+- Handle non-string log messages properly.
 
 
 0.3 (2013-09-04)

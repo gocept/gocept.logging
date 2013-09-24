@@ -13,7 +13,7 @@ PREDEFINED_KEYS.add('hostname')  # SyslogKeyValueFormatter
 class KeyValueFormatter(logging.Formatter):
 
     def format(self, record):
-        record.msg += ' ' + self.format_extra(record)
+        record.msg = '%s %s' % (record.msg, self.format_extra(record))
         return super(KeyValueFormatter, self).format(record)
 
     def format_extra(self, record):
