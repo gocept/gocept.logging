@@ -5,7 +5,7 @@ Change log for gocept.logging
 0.5 (unreleased)
 ================
 
-- Nothing changed yet.
+- Allow to change log format for the ``ArgumentParser``
 
 
 0.4 (2013-09-24)

@@ -217,6 +217,8 @@ set a ``logging`` level in you runscripts.::
 
     from gocept.logging import ArgumentParser
     parser = ArgumentParser()
+    # Optionally set a custom log format, defaults to ``logging.BASIC_FORMAT``
+    parser.LOG_FORMAT = 'LOG:%(message)s'
     # add your arguments with parser.add_argument() here
     options = parser.parse_args()
 
