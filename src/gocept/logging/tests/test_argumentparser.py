@@ -60,3 +60,12 @@ class ArgumentParserTests(unittest.TestCase):
             self.assertEqual(options.quiet, 0)
             self.assertEqual(options.verbose, 2)
             setup_logging.assert_called_with('DEBUG')
+
+    def test_message_format_can_be_set(self):
+        from gocept.logging import ArgumentParser
+        parser = ArgumentParser()
+        parser.LOG_FORMAT = new_format = 'foo! %(messsage)s'
+        with mock.patch('logging.basicConfig') as basicConfig:
+            parser.parse_args([])
+            basicConfig.assert_called_with(
+                level=mock.ANY, format=new_format)

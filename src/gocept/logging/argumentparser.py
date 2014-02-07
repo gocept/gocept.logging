@@ -4,6 +4,8 @@ import logging
 
 class ArgumentParser(argparse.ArgumentParser):
 
+    LOG_FORMAT = logging.BASIC_FORMAT
+
     def __init__(self, *args, **kw):
         super(ArgumentParser, self).__init__(*args, **kw)
         self.add_argument('-q', '--quiet', action='count', default=0,
@@ -30,4 +32,4 @@ class ArgumentParser(argparse.ArgumentParser):
         return options
 
     def setup_logging(self, level):
-        logging.basicConfig(level=level)
+        logging.basicConfig(level=level, format=self.LOG_FORMAT)
