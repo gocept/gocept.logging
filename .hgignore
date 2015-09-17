@@ -6,3 +6,5 @@ build
 coverage-report
 dist
 testreport.xml
+*.pyc
+*.egg-info
