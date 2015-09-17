@@ -3,6 +3,7 @@ import mock
 
 
 class ArgumentParserTests(unittest.TestCase):
+    """Testing ..argumentparser.ArgumentParser."""
 
     def test_adds_quiet_and_verbose_arguments_per_default(self):
         from gocept.logging import ArgumentParser
@@ -69,3 +70,10 @@ class ArgumentParserTests(unittest.TestCase):
             parser.parse_args([])
             basicConfig.assert_called_with(
                 level=mock.ANY, format=new_format)
+
+    def test_argumentparser__ArgumentParser__parse_args__1(self):
+        """`parse_args()` stores the computed `log_level` on options."""
+        from gocept.logging import ArgumentParser
+        parser = ArgumentParser()
+        options = parser.parse_args(['-v'])
+        self.assertEqual(options.log_level, 'INFO')

@@ -29,6 +29,7 @@ class ArgumentParser(argparse.ArgumentParser):
             log_level = 'DEBUG'
 
         self.setup_logging(log_level)
+        options.log_level = log_level
         return options
 
     def setup_logging(self, level):

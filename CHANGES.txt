@@ -7,6 +7,8 @@ Change log for gocept.logging
 
 - Declare Python 3.4 compatibility.
 
+- ``ArgumentParser.parse_args()`` now stores the computed log level on the
+  ``log_level`` attribute of the return value.
 
 0.5 (2014-02-07)
 ================
