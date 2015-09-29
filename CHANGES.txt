@@ -5,7 +5,7 @@ Change log for gocept.logging
 0.7 (unreleased)
 ================
 
-- Nothing changed yet.
+- Declare Python 3.5 compatibility.
 
 
 0.6 (2015-09-17)
