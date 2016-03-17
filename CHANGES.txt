@@ -2,7 +2,7 @@
 Change log for gocept.logging
 =============================
 
-0.8 (unreleased)
+0.8 (2016-03-17)
 ================
 
 - Declare compatibility with PyPy and PyPy3.
