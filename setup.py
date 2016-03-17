@@ -17,7 +17,7 @@ def project_path(*names):
 
 setup(
     name='gocept.logging',
-    version='0.8',
+    version='0.9.dev0',
 
     install_requires=[
         'setuptools',
