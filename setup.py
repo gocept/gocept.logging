@@ -9,7 +9,7 @@ import glob
 
 setup(
     name='gocept.logging',
-    version='0.9.dev0',
+    version='0.8.1',
 
     install_requires=[
         'setuptools',

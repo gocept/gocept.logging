@@ -2,8 +2,8 @@
 Change log for gocept.logging
 =============================
 
-0.9 (unreleased)
-================
+0.8.1 (2017-01-09)
+==================
 
 - Fix `setup.py` to use relative paths.
 
