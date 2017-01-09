@@ -2,6 +2,12 @@
 Change log for gocept.logging
 =============================
 
+0.9 (unreleased)
+================
+
+- Nothing changed yet.
+
+
 0.8.1 (2017-01-09)
 ==================
 
