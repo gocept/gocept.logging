@@ -1,4 +1,4 @@
-Copyright (c) 2013-2015 gocept gmbh & co. kg
+Copyright (c) 2013-2017 gocept gmbh & co. kg
 All Rights Reserved.
 
 This software is subject to the provisions of the Zope Public License,
