@@ -5,11 +5,6 @@
 
 from setuptools import setup, find_packages
 import glob
-import os.path
-
-
-def project_path(*names):
-    return os.path.join(os.path.dirname(__file__), *names)
 
 
 setup(
@@ -51,7 +46,7 @@ Programming Language :: Python :: Implementation :: CPython
 Programming Language :: Python :: Implementation :: PyPy
 """[:-1].split('\n'),
     description=__doc__.strip(),
-    long_description='\n\n'.join(open(project_path(name)).read() for name in (
+    long_description='\n\n'.join(open(name).read() for name in (
         'README.rst',
         'HACKING.rst',
         'CHANGES.rst',
@@ -61,6 +56,6 @@ Programming Language :: Python :: Implementation :: PyPy
     packages=find_packages('src'),
     package_dir={'': 'src'},
     include_package_data=True,
-    data_files=[('', glob.glob(project_path('*.rst')))],
+    data_files=[('', glob.glob('*.rst'))],
     zip_safe=False,
 )
