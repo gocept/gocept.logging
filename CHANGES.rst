@@ -5,7 +5,7 @@ Change log for gocept.logging
 0.9 (unreleased)
 ================
 
-- Nothing changed yet.
+- Add an alias ``.warn`` for ``.warning`` for ``StaticDefaults``. (#1)
 
 
 0.8.1 (2017-01-09)
