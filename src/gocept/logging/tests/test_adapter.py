@@ -31,3 +31,8 @@ class StaticDefaultsTest(unittest.TestCase):
         log = StaticDefaults(self.log, {'foo': 'bar'})
         log.warning('', extra={'foo': 'over'})
         self.assertEqual({'foo': 'over'}, self.handler.messages[0].extra)
+
+    def test_logger_uses_warn_alias(self):
+        log = StaticDefaults(self.log, {'foo': 'bar'})
+        log.warn('', extra={'foo': 'over'})
+        self.assertEqual({'foo': 'over'}, self.handler.messages[0].extra)

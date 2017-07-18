@@ -11,3 +11,5 @@ class StaticDefaults(logging.LoggerAdapter):
         else:
             kwargs['extra'] = self.extra
         return msg, kwargs
+
+    warn = logging.LoggerAdapter.warning
