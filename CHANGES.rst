@@ -2,10 +2,12 @@
 Change log for gocept.logging
 =============================
 
-0.9 (unreleased)
+1.0 (unreleased)
 ================
 
 - Add an alias ``.warn`` for ``.warning`` for ``StaticDefaults``. (#1)
+
+- Drop support for Python 3.3 and declare compatibility with Python 3.6.
 
 
 0.8.1 (2017-01-09)
