@@ -12,7 +12,7 @@ Developing gocept.logging
     `report by e-mail <mail@gocept.com>`_
 
 :Source code:
-    https://bitbucket.org/gocept/gocept.logging/
+    https://github.com/gocept/gocept.logging
 
 :Current change log:
-    https://bitbucket.org/gocept/gocept.logging/raw/tip/CHANGES.txt
+    https://raw.githubusercontent.com/gocept/gocept.logging/master/CHANGES.rst

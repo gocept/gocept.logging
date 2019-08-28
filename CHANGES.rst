@@ -9,6 +9,8 @@ Change log for gocept.logging
 
 - Drop support for Python 3.3 and declare compatibility with Python 3.6.
 
+- Migrate to Github.
+
 
 0.8.1 (2017-01-09)
 ==================
