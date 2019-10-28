@@ -1,12 +1,11 @@
-syntax: glob
-
 *.egg-info
 *.pyc
 .cache
 .coverage
-coverage.xml
+.coverage.*
 .tox
 build
 coverage-report
+coverage.xml
 dist
 testreport.xml
