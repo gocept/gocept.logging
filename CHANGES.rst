@@ -12,6 +12,8 @@ Change log for gocept.logging
 
 - Migrate to Github.
 
+- Use Github actions as CI.
+
 
 0.8.1 (2017-01-09)
 ==================
