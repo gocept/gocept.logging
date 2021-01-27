@@ -1,5 +1,5 @@
-import unittest
 import mock
+import unittest
 
 
 class ArgumentParserTests(unittest.TestCase):
