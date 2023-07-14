@@ -5,20 +5,11 @@ Change log for gocept.logging
 1.0 (unreleased)
 ================
 
-- Drop support for Python 2.7, 3.5, 3.6.
+- Drop support for Python 2.7, 3.3, 3.4, 3.5, 3.6.
 
-- Add support for Python 3.9, 3.10, 3.11.
-
-- Drop support for Python 3.5, 3.6.
+- Add support for Python 3.7, 3.8 3.9, 3.10, 3.11.
 
 - Add an alias ``.warn`` for ``.warning`` for ``StaticDefaults``. (#1)
-
-- Drop support for Python 3.3 and 3.4 and declare compatibility with Python
-  3.6 up to 3.8.
-
-- Migrate to Github.
-
-- Use Github actions as CI.
 
 
 0.8.1 (2017-01-09)
