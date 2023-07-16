@@ -10,7 +10,7 @@ LogMessage = collections.namedtuple(
 class TestingHandler(logging.Handler):
 
     def __init__(self, *args, **kw):
-        super(TestingHandler, self).__init__(*args, **kw)
+        super().__init__(*args, **kw)
         self.messages = []
 
     def emit(self, record):

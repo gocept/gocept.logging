@@ -10,8 +10,8 @@ import glob
 
 setup(
     name='gocept.logging',
-    version='0.9.dev0',
-
+    version='1.0.dev0',
+    python_requires='>=3.7',
     install_requires=[
         'setuptools',
     ],
@@ -37,8 +37,6 @@ setup(
     classifiers=[
         'License :: OSI Approved :: Zope Public License',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
