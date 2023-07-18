@@ -1,0 +1,4 @@
+include *.yaml
+include .coveragerc
+include pytest.ini
+include tox.ini
