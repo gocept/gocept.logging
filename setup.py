@@ -9,7 +9,7 @@ from setuptools import setup
 
 setup(
     name='gocept.logging',
-    version='1.0',
+    version='1.1.dev0',
     python_requires='>=3.7',
     install_requires=[
         'setuptools',
