@@ -2,7 +2,7 @@
 Change log for gocept.logging
 =============================
 
-1.0 (unreleased)
+1.0 (2023-07-18)
 ================
 
 - Drop support for Python 2.7, 3.3, 3.4, 3.5, 3.6.
